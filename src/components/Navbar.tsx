@@ -25,7 +25,7 @@ const Navbar = () => {
         { name: "QUIÉNES SOMOS", href: "/about" },
         { name: "RESIDENCIAS", href: "/residences" },
         { name: "SERVICIOS", href: "/services" },
-        { name: "DIRECTORIO", href: "/directory" },
+        { name: "DIRECTORIO", href: "/directorio" },
         { name: "CONTACTO", href: "/contact" },
     ];
 
