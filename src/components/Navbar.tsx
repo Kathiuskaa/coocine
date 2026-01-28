@@ -22,19 +22,16 @@ const Navbar = () => {
     }, []);
 
     const navItems = [
-        { name: "QUIÉNES SOMOS", href: "/about" },
-        { name: "RESIDENCIAS", href: "/residences" },
-        { name: "SERVICIOS", href: "/services" },
+        { name: "QUIÉNES SOMOS", href: "/quienes-somos" },
+        { name: "RESIDENCIAS", href: "/residencias" },
+        { name: "SERVICIOS", href: "/servicios" },
         { name: "DIRECTORIO", href: "/directorio" },
-        { name: "CONTACTO", href: "/contact" },
+        { name: "CONTACTO", href: "/contacto" },
     ];
 
     return (
-        <motion.nav
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-6 md:px-12 transition-all duration-300 ${isScrolled ? "bg-black/50 backdrop-blur-md" : "bg-black"
+        <nav
+            className={`fixed top-0 left-0 w-full z-[100] flex justify-between items-center px-6 py-6 md:px-12 transition-all duration-300 ${isScrolled ? "bg-black/50 backdrop-blur-md" : "bg-transparent"
                 }`}
         >
             <Link href="/" className="block">
@@ -56,7 +53,7 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-        </motion.nav>
+        </nav>
     );
 };
 

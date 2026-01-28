@@ -7,9 +7,10 @@ interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
     children: React.ReactNode;
+    className?: string;
 }
 
-export default function Modal({ isOpen, onClose, children }: ModalProps) {
+export default function Modal({ isOpen, onClose, children, className }: ModalProps) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -27,14 +28,14 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
 
     return (
         <div
-            className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+            className={`fixed inset-0 z-[200] flex items-center justify-center p-4 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
         >
             <div
                 className="absolute inset-0 bg-black/80 backdrop-blur-sm"
                 onClick={onClose}
             />
             <div
-                className={`relative bg-neutral-900 border border-white/10 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl transition-transform duration-300 transform ${isOpen ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}
+                className={`relative bg-black border border-white/10 w-full ${className || 'max-w-4xl'} max-h-[90vh] overflow-y-auto rounded-lg shadow-2xl transition-transform duration-300 transform ${isOpen ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}`}
             >
                 <button
                     onClick={onClose}

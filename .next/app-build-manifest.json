@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/directory/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/directory/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,20 +11,35 @@
       "static/css/css-src_app_globals_css-node_modules_next_font_google_target_css.css",
       "static/chunks/app/layout.js"
     ],
-    "/contact/page": [
+    "/directorio/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/directorio/page.js"
     ],
-    "/residences/page": [
+    "/quienes-somos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/residences/page.js"
+      "static/chunks/app/quienes-somos/page.js"
     ],
-    "/page": [
+    "/residencias/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/residencias/page.js"
+    ],
+    "/servicios/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/servicios/page.js"
+    ],
+    "/contacto/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contacto/page.js"
+    ],
+    "/contacto/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contacto/layout.js"
     ]
   }
 }
