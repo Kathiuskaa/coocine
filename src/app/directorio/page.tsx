@@ -16,42 +16,106 @@ interface TeamMember {
     instagram?: string;
     imdb?: string;
     imagePosition?: string;
+
     email?: string;
+    filmography?: {
+        title: string;
+        details?: string[];
+        year?: string;
+    }[];
 }
 
 const teamMembers: TeamMember[] = [
     {
         id: 1,
         name: "Germán Arango Rendón",
-        role: "Dirección, guion, investigación, escritura creativa",
+        role: "Dirección, Guión, Investigación, Escritura creativa",
         image: "/german-arango.jpg",
+
+        imagePosition: "center 20%",
         bio: (
             <>
-                Antropólogo, guionista y director de cine, master en antropología visual. Socio fundador de la empresa de cine Briosa Films. Co-fundador del colectivo de investigación y cine colaborativo Pasolini en Medellín. Su largo documental <i>Cantos que inundan el río</i>, se estrenó en Hot Docs (2021) y fue galardonado como mejor documental del CineLatino de Toulouse (2022), y mejor largometraje etnográfico (2022) por The Society for Visual Anthropology. Su corto de ficción <i>El Juicio</i> fue parte del Festival del Nuevo Cine Latinoamericano de la Habana (2020) y de Bogoshorts (2021).
+                Antropólogo, guionista y director de cine, master en antropología visual. Socio fundador de la empresa de cine Briosa Films. Co-fundador del colectivo de investigación y cine colaborativo Pasolini en Medellín. Su obra documental ha recibido más de 12 premios internacionales y ha participado en más de 40 festivales de cine en todo el mundo.
             </>
         ),
+        filmography: [
+            { title: "RÍO PROFUNDO", details: ["Cortometraje experimental", "Guión y Dirección"], year: "2024" },
+            { title: "INSTRUCCIONES PARA CUANDO NO ESTÉ", details: ["Largometraje documental", "Guión y Dirección"], year: "2024" },
+            { title: "TEJER ENTRE FRONTERAS", details: ["Serie documental", "Dirección y Montaje"], year: "2024" },
+            { title: "CANTOS QUE INUNDAN EL RÍO", details: ["Largometraje documental", "Guión y Dirección"], year: "2021" },
+            { title: "A MITAD DEL CAMINO", details: ["Cortometraje musical", "Dirección artística"], year: "2018" },
+            { title: "LAS MUSAS DE POGUE", details: ["Cortometraje documental", "Guión y Dirección"], year: "2018" },
+            { title: "TESTIGOS A OJO Y VOZ", details: ["Videoclip", "Producción"], year: "2017" },
+            { title: "LA MEMORIA DE LOS PECES", details: ["Cortometraje documental", "Guión y Dirección"], year: "2017" }
+        ],
         instagram: "@luckasperro",
         email: "german.arango@coocine.com"
     },
     {
         id: 2,
+        name: "David Correa Franco",
+        role: "Dirección de fotografía, Realización documental, Color",
+        image: "/david-correa-v2.png",
+        bio: (
+            <>
+                Director de fotografía, realizador y docente. Ha participado como director de fotografía en más de ocho largometrajes colombianos, entre documentales y ficciones que han recorrido festivales como Biarritz, Thessaloniki, Rotterdam, SXSW, San Sebastián, entre otros. Actualmente investiga y dirige proyectos documentales, también es docente de cátedra para la Universidad de Antioquia y Eafit.
+            </>
+        ),
+        filmography: [
+            { title: "LOS NADIE", details: ["Largometraje ficción", "Dirección de fotografía"], year: "2016" },
+            { title: "LOS DÍAS DE LA BALLENA", details: ["Largometraje ficción", "Dirección de fotografía"], year: "2019" },
+            { title: "EL SÍNDROME DE LOS QUIETOS", details: ["Cortometraje documental", "Dirección de fotografía"], year: "2021" },
+            { title: "SI DIOS FUERA MUJER", details: ["Largometraje documental", "Dirección de fotografía"], year: "2022" },
+            { title: "LA ROYA", details: ["Largometraje ficción", "Dirección de fotografía"], year: "2022" },
+            { title: "PARTES DE UNA CASA", details: ["Largometraje documental", "Dirección"], year: "2023" },
+            { title: "ENTRE LAS SOMBRAS ARDEN MUNDOS", details: ["Cortometraje ficción", "Dirección de fotografía y Color"], year: "2023" },
+            { title: "EL ORIGEN DE LAS ESPECIES", details: ["Largometraje experimental", "Dirección de fotografía"], year: "2024" },
+            { title: "DOS VECES BESTIA", details: ["Largometraje no ficción", "Color"], year: "2025" },
+            { title: "MANUAL PARA INVOCAR FANTASMAS", details: ["Largometraje no ficción", "Dirección de fotografía"], year: "2026" },
+            { title: "TODO LO QUE EL SOL", details: ["Largometraje documental", "Dirección"], year: "2026" },
+            { title: "FUTUROS LUMINOSOS", details: ["Cortometraje ficción", "Dirección de fotografía y Color"], year: "2026" }
+        ],
+        instagram: "@_davidco_",
+        email: "davidcofranco@gmail.com"
+    },
+    {
+        id: 3,
         name: "Juan Cañola",
         role: "Montaje",
         image: "/juan-canola.jpg",
+
         bio: (
             <>
-                Juan Cañola ha trabajado en películas como <i>La piel en primavera</i>, seleccionada en la sección Forum de la Berlinale 2024; <i>Avalancha</i>, ganador a Mejor Cortometraje en el Festival Punto de Vista 2024 y parte de la selección oficial del IDFA en 2023; y <i>Diógenes</i>, película peruana galardonada como Mejor Película Iberoamericana en la sección Zonazine del Festival de Cine de Málaga 2023. También ha sido montajista de <i>Amando a Martha</i>, seleccionada en Luminous IDFA 2022; <i>La Roya</i>, incluida en el Festival de San Sebastián 2021; y <i>Las Fauces</i>, premiada como Mejor Cortometraje Latinoamericano en el Festival de Curtas Metragens de São Paulo y en el Festival de Valdivia 2020, entre otras obras destacadas. En 2018 recibió el Premio India Catalina a Mejor Editor.
+                Montajista con experiencia en películas seleccionadas en festivales de renombre como Berlinale, IDFA y Málaga. Ha trabajado en obras galardonadas como Mejor Cortometraje en Punto de Vista y Mejor Película Iberoamericana en Zonazine. En 2018 recibió el Premio India Catalina a Mejor Editor.
             </>
         ),
+        filmography: [
+            { title: "AVALANCHA", details: ["Cortometraje documental"], year: "2023" },
+            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje ficción"], year: "2024" },
+            { title: "DIÓGENES", details: ["Largometraje ficción"], year: "2023" },
+            { title: "AMANDO A MARTHA", details: ["Largometraje documental"], year: "2022" },
+            { title: "LA ROYA", details: ["Largometraje ficción"], year: "2021" },
+            { title: "LAS FAUCES", details: ["Cortometraje ficción"], year: "2020" }
+        ],
         imdb: "https://www.imdb.com/es/name/nm8110301/?ref_=ext_shr_lnk",
         email: "juan.canola@coocine.com"
     },
     {
-        id: 3,
+        id: 15,
         name: "Alexander Arbeláez Osorio",
-        role: "Producción, programación, docencia",
+        role: "Producción, Programación, Docencia",
         image: "/alexander-arbealez.jpg",
+
         bio: "Comunicador Audiovisual de la Universidad de Antioquia, especializado en producción ejecutiva. Desde Monociclo Cine produjo largometrajes y cortometrajes estrenados en salas de cine comerciales y premiados en festivales internacionales. También es docente universitario, jurado de convocatorias, tutor de proyectos y programador en la Cooperativa Coocine.",
+        filmography: [
+            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje", "Producción"], year: "2024" },
+            { title: "RODAJE", details: ["Mediometraje", "Producción"], year: "2023" },
+            { title: "LA ROYA", details: ["Largometraje", "Producción"], year: "2022" },
+            { title: "SI DIOS FUERA MUJER", details: ["Largometraje", "Producción"], year: "2021" },
+            { title: "TIERRA MOJADA", details: ["Cortometraje", "Producción"], year: "2017" },
+            { title: "LOS NADIE", details: ["Largometraje", "Producción"], year: "2016" },
+            { title: "KALASHNIKOV", details: ["Cortometraje", "Producción"], year: "2012" }
+        ],
         instagram: "@jalexao",
         imdb: "https://www.imdb.com/es-es/name/nm5605054/",
         email: "alexander.arbelaez@coocine.com"
@@ -61,11 +125,18 @@ const teamMembers: TeamMember[] = [
         name: "José Manuel Duque López",
         role: "Producción, Archivo, Docencia, Gestión cultural",
         image: "/jose-duque.jpg",
+
         bio: (
             <>
-                Productor cinematográfico, docente universitario y ceramista. Co-fundador de Monociclo Cine, empresa con amplia experiencia y reconocimiento en la industria cinematográfica local e internacional. Ha participado en diferentes grupos de estudio, talleres y seminarios con el fin de investigar e implementar metodologías alternativas en la producción de cine y en la formación entorno al audiovisual. Ha experimentado a través de sus películas con diferentes lenguajes y estilos cinematográficos a la vanguardia del cine contemporáneo mundial. Actualmente comienza la distribución de su última producción <i>Espejos Rotos</i> y desarrolla la serie de divulgación científica <i>Bionautas</i>. Paralelamente hace parte activa de la cooperativa multiactiva de cineastas - COOCINE.
+                Productor cinematográfico, docente universitario y ceramista. Co-fundador de Monociclo Cine, empresa con amplia experiencia y reconocimiento en la industria cinematográfica local e internacional. Ha participado en diferentes grupos de estudio, talleres y seminarios con el fin de investigar e implementar metodologías alternativas en la producción de cine y en la formación entorno al audiovisual. Ha experimentado a través de sus películas con diferentes lenguajes y estilos cinematográficos a la vanguardia del cine contemporáneo mundial. Actualmente desarrolla la serie de divulgación científica <i>Bionautas</i>. Paralelamente hace parte activa de la cooperativa multiactiva de cineastas - COOCINE.
             </>
         ),
+        filmography: [
+            { title: "ESPEJOS ROTOS", details: ["Largometraje documental", "Producción"], year: "2025" },
+            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje ficción", "Jefatura de producción"], year: "2024" },
+            { title: "AVALANCHA", details: ["Cortometraje documental", "Producción"], year: "2024" },
+            { title: "LA ROYA", details: ["Largometraje ficción", "Jefatura de producción"], year: "2021" }
+        ],
         imdb: "https://www.imdb.com/name/nm8331035/",
         email: "jose.duque@coocine.com"
     },
@@ -74,19 +145,37 @@ const teamMembers: TeamMember[] = [
         name: "Daniel Mesa de los Ríos",
         role: "Cineclubismo, Crítica de cine, Formación",
         image: "/daniel-mesa.jpg",
+        imagePosition: "center 20%",
+
         bio: "Coordinador de la Competencia de cortometrajes Nuevas Voces de Cinemancia Festival metropolitano de cine. Cineclubista en el Rambiñen, cineasta, espectador fervoroso de cine. Apasionado por la gestión de públicos y el descubrimiento de nuevas miradas y sensibilidades.",
         email: "daniel.mesa@coocine.com"
     },
     {
         id: 6,
         name: "Juan Pablo Patiño Jaramillo",
-        role: "Sonidista, diseñador sonoro, artista Foley, Docente",
-        image: "/juan-pablo-patino.jpg",
+        role: "Sonido, Diseño sonoro, Foley, Docencia",
+        image: "/juan-pablo-patino-v2.jpg",
+
         bio: (
             <>
-                Soy artista, diseñador sonoro, microfonista y sonidista que vive y trabaja en Medellín, Colombia. Egresé del programa de Ingeniería de Sonido de la Universidad de San Buenaventura de Colombia. Así mismo, obtuve el diplomado en Arte Sonoro de la Universidad Autónoma de Barcelona y Universidad de Chile. Co fundador y director creativo durante 6 años de la productora Rueda Sonido, empresa dedicada a la grabación y postproducción de sonido cinematográfico. Fue co fundador de la cooperativa de cine COOCINE, en el año 2024. Desde hace 10 años he trabajado en incontables proyectos audiovisuales. Dentro de los largometrajes de ficción resalta mi participación en: <i>Los reyes del mundo</i> (2023) de Laura Mora; <i>Los conductos</i> (2020), de Camilo Restrepo; y <i>El acompañante</i> (2015), de Pavel Giroud. Igualmente, he hecho parte de destacados documentales como: <i>Suspensión</i> (2019) de Simón Uribe; <i>Las razones del lobo</i> (2022) de Marta Hincapié; y <i>Como el cielo después de llover</i> (2020) de Mercedes Gaviria, <i>Pepe, la imaginación en el tercer cine</i> (2021), <i>Barrio triste</i> (2024). Estos y otros proyectos han participado en eventos como el Festival de Cine de San Sebastián, el Festival Internacional de Cine Documental de Amsterdam IDFA, Berlinale Film Festival, el Festival de Cine de La Habana, el Festival Internacional de Cine de Cartagena de Indias, el Festival de Cine de Roma, entre otros.
+                Artista, diseñador sonoro, microfonista y sonidista que vive y trabaja en Medellín, Colombia. Egresado del programa de Ingeniería de Sonido de la Universidad de San Buenaventura de Colombia. Así mismo, obtuvo el diplomado en Arte Sonoro de la Universidad Autónoma de Barcelona y Universidad de Chile. Co fundador y director creativo durante 6 años de la productora Rueda Sonido, empresa dedicada a la grabación y postproducción de sonido cinematográfico. Fue co fundador de la cooperativa de cine COOCINE, en el año 2024. Desde hace 10 años ha trabajado en incontables proyectos audiovisuales.
             </>
         ),
+        filmography: [
+            { title: "LOS REYES DEL MUNDO", details: ["Largometraje", "Sonido"], year: "2023" },
+            { title: "LOS CONDUCTOS", details: ["Largometraje", "Sonido y Diseño sonoro"], year: "2020" },
+            { title: "EL ACOMPAÑANTE", details: ["Largometraje"], year: "2015" },
+            { title: "SUSPENSIÓN", details: ["Largometraje documental", "Sonido y Diseño sonoro"], year: "2019" },
+            { title: "LAS RAZONES DEL LOBO", details: ["Largometraje", "Sonido y Diseño sonoro"], year: "2019" },
+            { title: "COMO EL CIELO DESPUÉS DE LLOVER", details: ["Documental"], year: "2020" },
+            { title: "PEPE, LA IMAGINACIÓN EN EL TERCER CINE", details: ["Sonido"], year: "2021" },
+            { title: "ZOOÑADORES", details: ["Serie animada", "Diseño sonoro"], year: "2020" },
+            { title: "LA SINFONIA DE LOS BICHOS RAROS", details: ["Serie", "Sonido"], year: "2022" },
+            { title: "LA SOCIEDAD DE LA CUMBIA", details: ["Serie", "Sonido y Diseño sonoro"], year: "2023" },
+            { title: "HIGUITA, EL CAMINO DEL ESCORPIÓN", details: ["Largometraje", "Sonido"], year: "2023" },
+            { title: "PIEDRAS PRECIOSAS", details: ["Largometraje", "Sonido"], year: "2024" },
+            { title: "BARRIO TRISTE", details: ["Largometraje", "Sonido"], year: "2024" }
+        ],
         instagram: "@gule.jp",
         imdb: "https://www.imdb.com/es/name/nm11407271/",
         email: "juan.patino@coocine.com"
@@ -96,6 +185,8 @@ const teamMembers: TeamMember[] = [
         name: "María Paula",
         role: "Rol Pendiente",
         image: "/maria-paula.jpg",
+
+        imagePosition: "center 20%",
         bio: "Bio pendiente...",
         email: "maria.paula@coocine.com"
     },
@@ -104,6 +195,7 @@ const teamMembers: TeamMember[] = [
         name: "Camila Caballero",
         role: "Rol Pendiente",
         image: "/camila-caballero.jpg",
+
         bio: "Bio pendiente...",
         email: "camila.caballero@coocine.com"
     },
@@ -112,6 +204,7 @@ const teamMembers: TeamMember[] = [
         name: "Simón Vélez",
         role: "Rol Pendiente",
         image: "/simon-velez.jpg",
+
         bio: "Bio pendiente...",
         email: "simon.velez@coocine.com"
     },
@@ -120,20 +213,28 @@ const teamMembers: TeamMember[] = [
         name: "Tomás Campuzano",
         role: "Rol Pendiente",
         image: "/tomas-campuzano.jpg",
-        imagePosition: "20% center",
+        imagePosition: "center 20%",
+
         bio: "Bio pendiente...",
         email: "tomas.campuzano@coocine.com"
     },
     {
         id: 11,
         name: "Yira Plaza O'Byrne",
-        role: "Dirección, producción, distribución, docencia, actuación",
+        role: "Dirección, Producción, Distribución, Docencia, Actuación",
         image: "/yira-plaza.jpg",
         bio: (
             <>
-                Cartagena, Colombia 1987. Directora de Briosa Films, empresa productora y distribuidora de cine. Cursó el máster en documental de creación de la Universidad Pompeu Fabra. Es directora del largometraje documental <i>El rojo más puro</i>, estrenado en el Festival Internacional de Cine de Cartagena, 2023 y galardonada en 2024 como Mejor Documental en los premios Macondo de la Academia Colombiana de Cine. Productora de los largometrajes documentales <i>Andariega</i> (Selección oficial IDFA 2025, FICCI 2025) y de <i>El segundo entierro de Alejandrino</i> (Premio especial del Jurado Festival Internacional de Cine de Guadalajara 2020), de los cortometrajes <i>El juicio</i> (Festival de Nuevo Cine Latinoamericano de la Habana, 2020, Selección oficial Bogoshorts 2021) y <i>No menguará el fuego de esta luna</i> (Selección oficial Bogoshorts 2025). Productora del largometraje de ficción en desarrollo <i>Mc Silencio</i> y varios proyectos documentales en desarrollo. Actualmente trabaja en la dirección de <i>Se buscan mamás</i>, largometraje documental en desarrollo. Hace parte de Coocine, cooperativa de cine y de la Asociación de documentalistas, Alados.
+                Cartagena, Colombia 1987. Directora de Briosa Films, empresa productora y distribuidora de cine. Cursó el máster en documental de creación de la Universidad Pompeu Fabra. Productora del largometraje de ficción en desarrollo <i>Mc Silencio</i> y varios proyectos documentales en desarrollo. Actualmente trabaja en la dirección de <i>Se buscan mamás</i>, largometraje documental en desarrollo. Hace parte de Coocine, cooperativa de cine y de la Asociación de documentalistas, Alados.
             </>
         ),
+        filmography: [
+            { title: "EL JUICIO", details: ["Cortometraje", "Producción"], year: "2020" },
+            { title: "EL SEGUNDO ENTIERRO DE ALEJANDRINO", details: ["Producción"], year: "2021" },
+            { title: "EL ROJO MÁS PURO", details: ["Largometraje", "Dirección"], year: "2023" },
+            { title: "ANDARIEGA", details: ["Largometraje", "Producción"], year: "2025" },
+            { title: "NO MENGUARÁ EL FUEGO DE ESTA LUNA", details: ["Cortometraje", "Producción"], year: "2025" }
+        ],
         instagram: "@yiraplaza",
         imdb: "https://www.imdb.com/es/name/nm7295030/",
         email: "yira.plaza@coocine.com"
@@ -141,13 +242,20 @@ const teamMembers: TeamMember[] = [
     {
         id: 12,
         name: "Alejandra Morales García",
-        role: "Dirección/Producción Creativa/Ilustración",
+        role: "Dirección, Producción creativa, Ilustración",
         image: "/alejandra-morales.jpg",
+
+        imagePosition: "center 15%",
         bio: (
             <>
-                Soy directora y productora creativa. Hacedora de garabatos. Trabajo actualmente en LaFinka Studio, donde coordino flujos de trabajo y acompaño a artistas en la creación de narrativas animadas para clientes como Google, ABC Australia, PBS USA y otros. He participado en la producción y dirección artística de diversos festivales: fui coordinadora logística en el Festival de Cine de Jardín, responsable de comunicaciones en la Muestra de Video Experimental VARTEX, y curadora y directora creativa en el Festival de Cortometrajes Rodando en Bicicleta. Soy creadora de <i>Entrelazadas</i>, proyecto ganador del Fondo para el Desarrollo Cinematográfico (FDC) 2019, del programa Jóvenes en Movimiento 2021, y de otras becas y reconocimientos en el ámbito audiovisual. <i>Entrelazadas</i> ha sido seleccionado en más de 20 festivales nacionales e internacionales. Tengo experiencia en la formulación, dirección y producción de proyectos audiovisuales. Me interesa mezclar las artes plásticas y el cine como lenguajes que dialogan y se potencian mutuamente.
+                Directora y productora creativa. Hacedora de garabatos. Trabaja actualmente en LaFinka Studio, donde coordina flujos de trabajo y acompaña a artistas en la creación de narrativas animadas para clientes como Google, ABC Australia, PBS USA y otros. Ha participado en la producción y dirección artística de diversos festivales: fue coordinadora logística en el Festival de Cine de Jardín, responsable de comunicaciones en la Muestra de Video Experimental VARTEX, y curadora y directora creativa en el Festival de Cortometrajes Rodando en Bicicleta. Ganadora del Fondo para el Desarrollo Cinematográfico (FDC) 2019 y del programa Jóvenes en Movimiento 2021. Tiene experiencia en la formulación, dirección y producción de proyectos audiovisuales. Le interesa mezclar las artes plásticas y el cine como lenguajes que dialogan y se potencian mutuamente.
             </>
         ),
+        filmography: [
+            { title: "ENTRELAZADAS", details: ["Cortometraje", "Dirección, Guión y Animación"], year: "2023" },
+            { title: "MIENTRAS TANTO", details: ["Cortometraje", "Dirección y Guión"], year: "2018" },
+            { title: "EN LAS PARTIDAS", details: ["Cortometraje", "Dirección y Guión"], year: "2013" }
+        ],
         instagram: "@limaleja",
         imdb: "https://www.cinespecimen.com/cineastas/alejandra-morales",
         email: "alejandra.morales@coocine.com"
@@ -155,27 +263,49 @@ const teamMembers: TeamMember[] = [
     {
         id: 13,
         name: "Manuela Saldarriaga H.",
-        role: "Rol Pendiente",
-        image: "/manuela-saldarriaga.jpg",
+        role: "Guión, Crítica cinematográfica",
+        image: "/manuela-saldarriaga-v2.jpg",
         bio: (
             <>
-                Biografía pendiente...
+                Comunicadora social y magíster en periodismo de la Universidad de los Andes, donde fue docente, así como escritora y editora creativa para Cerosetenta. Ha publicado en medios nacionales e internacionales, revistas académicas y ediciones descentralizadas. Fue becaria del AMAZON RJF del Pulitzer Center y trabajó como editora y documentalista en Consonante, proyecto de la Fundación para la Libertad de Prensa (FLIP). Su trabajo ha sido principalmente con campesinos e indígenas colombianos.
             </>
         ),
+        filmography: [
+            { title: "EGIDIO CUADRADO", details: ["Documental", "Dirección y Guión"], year: "2025" },
+            { title: "AGENDA CIUDADANA SAN VICENTE DEL CAGUÁN", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA EL CARMEN DE ATRATO (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA TADÓ (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA SAN JUAN DEL CÉSAR (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA FONSECA (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "SUICIDIO INDÍGENA, UNA HERIDA ABIERTA EN LA SELVA", details: ["Mediometraje documental", "Guión y Montaje"], year: "2021" },
+            { title: "LA ENGUANDOCADA", details: ["Ensayo visual", "Investigación y Guión"], year: "2019" }
+        ],
+        instagram: "@lanochemochila",
         email: "manuela.saldarriaga@coocine.com"
     },
     {
         id: 14,
         name: "Marta Isabel Hincapié Uribe",
-        role: "Rol Pendiente",
+        role: "Dirección, Realización documental, Docencia",
         image: "/marta-hincapie.jpg",
         bio: (
             <>
-                Biografía pendiente...
+                Documentalista independiente con experiencia en docencia de cine documental en diferentes escuelas y universidades de Colombia y Cataluña. Sus documentales han participado en numerosos festivales nacionales e internacionales. Actualmente es docente de documental en la Facultad de Comunicación Audiovisual de la Universidad de Antioquia.
             </>
         ),
+        filmography: [
+            { title: "LAS RAZONES DEL LOBO", details: ["Largometraje", "Dirección"], year: "2020" },
+            { title: "BAJO UNA LLUVIA AJENA", details: ["Largometraje", "Dirección"], year: "2024" },
+            { title: "DAYIPAPARA LA MADRE", details: ["Mediometraje", "Dirección"], year: "2013" },
+            { title: "EN RELIEVE", details: ["Mediometraje", "Dirección"], year: "2015" },
+            { title: "A SOLAS", details: ["Mediometraje", "Dirección"], year: "2014" },
+            { title: "LOS DEMONIOS SUELTOS", details: ["Mediometraje", "Dirección"], year: "2011" },
+            { title: "LA PENA SECRETA", details: ["Mediometraje", "Dirección"], year: "2013" },
+            { title: "PIEL", details: ["Mediometraje", "Dirección"], year: "2006" }
+        ],
+        instagram: "@marta_isabel_hincapie_uribe",
         email: "marta.hincapie@coocine.com"
-    }
+    },
 ];
 
 export default function DirectoryPage() {
@@ -224,18 +354,26 @@ export default function DirectoryPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-16">
                 {teamMembers.map((member) => {
                     const { first, last } = formatName(member.name);
+                    const baseScale = 1.1; // Standardized scale for all photos
+                    const hoverScale = baseScale * 1.05;
+
                     return (
                         <div
                             key={member.id}
                             className="group cursor-pointer text-left"
                             onClick={() => setSelectedMember(member)}
+                            style={{
+                                "--base-scale": baseScale,
+                                "--hover-scale": hoverScale,
+                            } as React.CSSProperties}
                         >
                             <div className="relative aspect-square bg-neutral-900 overflow-hidden mb-4 grayscale group-hover:grayscale-0 transition-all duration-500">
                                 <Image
                                     src={member.image}
                                     alt={member.name}
                                     fill
-                                    className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-transform duration-500"
+                                    className="object-cover opacity-80 group-hover:opacity-100 scale-[var(--base-scale)] group-hover:scale-[var(--hover-scale)] transition-transform duration-500"
+                                    style={{ objectPosition: member.imagePosition || 'center 20%' }}
                                 />
                             </div>
                             <h3 className="w-full text-xl font-bold uppercase leading-none mb-2 tracking-tighter">
@@ -249,7 +387,7 @@ export default function DirectoryPage() {
                 })}
             </div>
 
-            <Modal isOpen={!!selectedMember} onClose={handleCloseModal} className="max-w-6xl">
+            <Modal isOpen={!!selectedMember} onClose={handleCloseModal} className="max-w-[90vw]">
                 {selectedMember && (
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="relative w-full md:w-1/2 aspect-square bg-neutral-800">
@@ -257,13 +395,20 @@ export default function DirectoryPage() {
                                 src={selectedMember.highResImage || selectedMember.image}
                                 alt={selectedMember.name}
                                 fill
+                                quality={100}
+                                priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
-                                style={{ objectPosition: selectedMember.imagePosition || 'center' }}
+                                style={{ objectPosition: selectedMember.imagePosition || 'center 20%' }}
                             />
                         </div>
                         <div className="p-8 md:p-12 md:w-1/2 flex flex-col justify-start overflow-y-auto max-h-[90vh]">
-                            <h2 className="text-3xl font-bold mb-2 uppercase text-white">{selectedMember.name}</h2>
-                            <h3 className="text-sm font-light text-gray-300 mb-8 uppercase tracking-widest">{selectedMember.role}</h3>
+                            <h2 className="text-3xl font-bold uppercase text-white leading-tight">
+                                <span className="block">{formatName(selectedMember.name).first}</span>
+                                <span className="block">{formatName(selectedMember.name).last}</span>
+                            </h2>
+                            <hr className="border-t border-white my-2" />
+                            <h3 className="text-sm font-normal text-white mb-4 uppercase tracking-widest">{selectedMember.role}</h3>
 
                             <div className="flex flex-wrap gap-4 mb-6">
                                 {selectedMember.instagram && (
@@ -290,50 +435,83 @@ export default function DirectoryPage() {
                                 )}
                             </div>
 
-                            <p className="text-gray-300 leading-relaxed text-lg font-light text-justify mb-8">
+                            <p className="text-white leading-loose text-base font-light text-justify mb-2">
                                 {selectedMember.bio}
                             </p>
+
+                            {selectedMember.filmography && selectedMember.filmography.length > 0 && (
+                                <div className="mt-8 mb-6">
+                                    <h4 className="text-sm font-bold uppercase tracking-widest text-[#EAAA00] mb-4 border-b border-white/20 pb-2">
+                                        Filmografía
+                                    </h4>
+                                    <div className="flex flex-col gap-3">
+                                        {selectedMember.filmography.map((item, index) => (
+                                            <div key={index} className="group flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 text-sm font-light hover:bg-white/5 p-2 rounded transition-colors -mx-2">
+                                                <div className="flex-1 min-w-0">
+                                                    {/* Line 1: Title */}
+                                                    <div className="block leading-tight mb-0.5">
+                                                        <span className="font-bold text-white uppercase tracking-wider">
+                                                            {item.title.replace(/\s([^\s<]+)\s*$/, '\u00A0$1')}
+                                                        </span>
+                                                    </div>
+
+                                                    {/* Line 2: Type | Roles (All details) */}
+                                                    {item.details && item.details.length > 0 && (
+                                                        <div className="text-white/80 text-xs sm:text-sm font-light">
+                                                            {item.details.join(" | ")}
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                {item.year && (
+                                                    <span className="text-[#EAAA00] font-mono text-xs sm:text-sm whitespace-nowrap self-start sm:self-auto mt-1 sm:mt-0">
+                                                        {item.year}
+                                                    </span>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
 
                             {/* Contact Section */}
                             {!showContactForm ? (
                                 <button
                                     onClick={() => setShowContactForm(true)}
-                                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 font-medium uppercase tracking-widest hover:bg-[#EAAA00] hover:text-black transition-colors self-start"
+                                    className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 font-medium uppercase tracking-widest hover:bg-[#EAAA00] hover:text-black transition-colors self-center mt-4"
                                 >
                                     <Mail size={18} />
                                     <span>CONTACTO</span>
                                 </button>
                             ) : (
-                                <form onSubmit={handleContactSubmit} className="w-full bg-neutral-900 p-6 border border-white/10 mt-auto">
-                                    <h4 className="text-[#EAAA00] uppercase tracking-widest font-bold mb-4 flex justify-between items-center">
-                                        <span>Enviar mensaje</span>
+                                <form onSubmit={handleContactSubmit} className="w-full bg-black p-6">
+                                    <div className="flex justify-end mb-4">
                                         <button onClick={() => setShowContactForm(false)} type="button" className="text-gray-500 hover:text-white">
                                             <X size={18} />
                                         </button>
-                                    </h4>
+                                    </div>
 
                                     <div className="space-y-4">
                                         <div>
-                                            <label htmlFor="contact-name" className="block text-xs uppercase tracking-widest text-gray-500 mb-1">Tu Nombre</label>
+                                            <label htmlFor="contact-name" className="block text-xs uppercase tracking-widest text-white mb-1">Tu Nombre</label>
                                             <input
                                                 id="contact-name"
                                                 type="text"
                                                 value={formName}
                                                 onChange={(e) => setFormName(e.target.value)}
                                                 required
-                                                className="w-full bg-black border border-white/20 p-2 text-white focus:border-[#EAAA00] outline-none transition-colors"
+                                                className="w-full bg-black border border-white p-2 text-white placeholder:text-white/50 focus:border-[#EAAA00] outline-none transition-colors"
                                                 placeholder="Nombre"
                                             />
                                         </div>
                                         <div>
-                                            <label htmlFor="contact-message" className="block text-xs uppercase tracking-widest text-gray-500 mb-1">Mensaje</label>
+                                            <label htmlFor="contact-message" className="block text-xs uppercase tracking-widest text-white mb-1">Mensaje</label>
                                             <textarea
                                                 id="contact-message"
                                                 value={formMessage}
                                                 onChange={(e) => setFormMessage(e.target.value)}
                                                 required
                                                 rows={4}
-                                                className="w-full bg-black border border-white/20 p-2 text-white focus:border-[#EAAA00] outline-none transition-colors resize-none"
+                                                className="w-full bg-black border border-white p-2 text-white placeholder:text-white/50 focus:border-[#EAAA00] outline-none transition-colors resize-none"
                                                 placeholder="Escribe tu mensaje..."
                                             />
                                         </div>

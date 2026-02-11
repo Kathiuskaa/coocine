@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Coocine - Cooperativa de Cine",
     description: "Cooperativa de creación, gestión, formación, producción, distribución y preservación cinematográfica.",
+    icons: {
+        icon: "/logo-white.png",
+    },
 };
 
 export default function RootLayout({

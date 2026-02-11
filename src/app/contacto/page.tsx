@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-import type { Metadata } from "next";
-
 export default function ContactPage() {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");

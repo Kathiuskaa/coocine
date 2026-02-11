@@ -12,11 +12,11 @@ export default function Home() {
 
             {/* Quiénes Somos (Text only) */}
             <section className="px-6 md:px-12 pb-24 max-w-7xl mx-auto">
-                <div className="text-lg md:text-xl font-light leading-loose tracking-wide text-gray-200 hover:text-[#EAAA00] transition-colors duration-300 text-center">
+                <div className="max-w-4xl mx-auto text-lg text-white font-light leading-relaxed text-center text-balance hover:text-[#EAAA00] transition-colors duration-300">
                     <p>
                         Coocine es un proyecto social y solidario donde nos encontramos para trazar caminos colaborativos en la creación y difusión del cine, incidiendo activamente en la política pública y cultural de Colombia.
                     </p>
-                    <p className="mt-8">
+                    <p className="mt-6">
                         Nuestro oficio habita todas las etapas de la imagen: desde la gestión y la formación, hasta la producción, distribución y preservación cinematográfica. Nos consolidamos como una gran cocina colectiva donde mezclamos, guisamos y servimos historias que responden a las transformaciones de nuestro tiempo.
                     </p>
                 </div>
@@ -24,72 +24,7 @@ export default function Home() {
 
 
 
-            {/* Services Grid */}
-            <section className="px-6 md:px-12 pb-24">
-
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 bg-transparent">
-                    {/* Card 1 */}
-                    <Link href="/servicios" className="group relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer block">
-                        <Image
-                            src="/production-bg.jpg"
-                            alt="Producción"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-100"
-                        />
-                        <div className="absolute inset-0 bg-transparent group-hover:bg-black/80 transition-colors duration-500" />
-                        <div className="absolute bottom-0 left-0 p-8 w-full">
-                            <h3 className="text-2xl font-bold text-white mb-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">Producción</h3>
-                            <p className="text-sm text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">Servicios de producción artística y técnica.</p>
-                        </div>
-                    </Link>
-
-                    {/* Card 2 */}
-                    <Link href="/servicios" className="group relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer block">
-                        <Image
-                            src="/formacion-bg.jpg"
-                            alt="Formación"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-100"
-                        />
-                        <div className="absolute inset-0 bg-transparent group-hover:bg-black/80 transition-colors duration-500" />
-                        <div className="absolute bottom-0 left-0 p-8 w-full">
-                            <h3 className="text-2xl font-bold text-white mb-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">Formación</h3>
-                            <p className="text-sm text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">Escuela y talleres de cine.</p>
-                        </div>
-                    </Link>
-
-                    {/* Card 3 - Links to Residences Page */}
-                    <Link href="/residencias" className="group relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer block">
-                        <Image
-                            src="/residencias.jpg"
-                            alt="Residencias"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-100"
-                        />
-                        <div className="absolute inset-0 bg-transparent group-hover:bg-black/80 transition-colors duration-500" />
-                        <div className="absolute bottom-0 left-0 p-8 w-full">
-                            <h3 className="text-2xl font-bold text-white mb-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">Residencias</h3>
-                            <p className="text-sm text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">Espacio de creación en Santa Elena.</p>
-                        </div>
-                    </Link>
-
-                    {/* Card 4 - Exhibición */}
-                    <Link href="/servicios" className="group relative aspect-[4/5] bg-neutral-900 overflow-hidden cursor-pointer block">
-                        <Image
-                            src="/exhibition-bg.jpg"
-                            alt="Exhibición"
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-100"
-                        />
-                        <div className="absolute inset-0 bg-transparent group-hover:bg-black/80 transition-colors duration-500" />
-                        <div className="absolute bottom-0 left-0 p-8 w-full">
-                            <h3 className="text-2xl font-bold text-white mb-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">Exhibición</h3>
-                            <p className="text-sm text-white translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">Espacios de proyección y difusión.</p>
-                        </div>
-                    </Link>
-                </div>
-            </section>
+            {/* Services Grid Removed per user request */}
 
             {/* Map Section */}
             <section className="w-full pb-24 px-6 md:px-12">

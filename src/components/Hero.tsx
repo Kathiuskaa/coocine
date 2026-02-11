@@ -1,8 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
-
 const Hero = () => {
     return (
         <section className="relative w-full h-screen overflow-hidden bg-black">
