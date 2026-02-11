@@ -11,16 +11,14 @@ export default function Home() {
             <div className="h-32" />
 
             {/* Quiénes Somos (Text only) */}
-            <section className="px-6 md:px-12 pb-24 max-w-7xl mx-auto">
-                <div className="max-w-4xl mx-auto text-lg text-white font-light leading-relaxed text-center text-balance hover:text-[#EAAA00] transition-colors duration-300">
-                    <p>
-                        Coocine es un proyecto social y solidario donde nos encontramos para trazar caminos colaborativos en la creación y difusión del cine, incidiendo activamente en la política pública y cultural de Colombia.
-                    </p>
-                    <p className="mt-6">
-                        Nuestro oficio habita todas las etapas de la imagen: desde la gestión y la formación, hasta la producción, distribución y preservación cinematográfica. Nos consolidamos como una gran cocina colectiva donde mezclamos, guisamos y servimos historias que responden a las transformaciones de nuestro tiempo.
-                    </p>
-                </div>
-            </section>
+            <div className="mt-24 mb-32 max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
+                <h1 className="text-3xl md:text-5xl font-bold text-white leading-[1.1] tracking-tighter max-w-4xl cursor-pointer hover:text-[#EAAA00] transition-colors duration-300 text-balance">
+                    Coocine es un proyecto social y solidario donde nos encontramos para trazar caminos colaborativos en la creación y difusión del cine, incidiendo activamente en la política pública y cultural de Colombia.
+                </h1>
+                <p className="mt-12 text-lg md:text-xl text-white font-light leading-relaxed max-w-3xl hover:text-[#EAAA00] transition-colors duration-300 text-pretty">
+                    Nuestro oficio habita todas las etapas de la imagen: desde la gestión y la formación, hasta la producción, distribución y preservación cinematográfica. Nos consolidamos como una gran cocina colectiva donde mezclamos, guisamos y servimos historias que responden a las transformaciones de nuestro tiempo.
+                </p>
+            </div>
 
 
 

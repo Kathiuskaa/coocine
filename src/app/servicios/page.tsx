@@ -69,7 +69,7 @@ export default function ServicesPage() {
 
             {/* Intro Text */}
             {/* Intro Text */}
-            <div className="mt-24 mb-32 max-w-7xl mx-auto px-6">
+            <div className="mt-24 mb-32 max-w-7xl mx-auto">
                 <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tighter max-w-6xl cursor-pointer hover:text-[#EAAA00] transition-colors duration-300">
                     Articulamos recursos técnicos y humanos para el fortalecimiento <br className="hidden lg:block" /> del sector audiovisual.
                 </h1>
