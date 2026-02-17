@@ -10,7 +10,7 @@ export default function AboutPage() {
     return (
         <main className="min-h-screen bg-black text-white pt-32 pb-24 px-6 md:px-12">
             <div className="mt-24 mb-32 max-w-7xl mx-auto px-6">
-                <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tighter max-w-6xl cursor-pointer hover:text-[#EAAA00] transition-colors duration-300 text-balance">
+                <h1 className="text-4xl md:text-6xl font-bold text-white leading-[1.1] tracking-tighter max-w-6xl cursor-pointer hover:text-[#EAAA00] transition-colors duration-300 text-balance">
                     La Cooperativa Coocine es un proyecto social y solidario en el que nos reunimos para encontrar caminos colaborativos y asociativos para producir y difundir CINE y para incidir en la política pública y cultural de Colombia.
                 </h1>
                 <p className="mt-12 text-xl md:text-2xl text-white font-light leading-relaxed max-w-4xl hover:text-[#EAAA00] transition-colors duration-300 text-pretty">
