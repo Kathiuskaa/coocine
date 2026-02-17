@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 // Force rebuild: 2026-02-11T09:02:00
 const nextConfig = {
-    images: {
-        unoptimized: true,
-    },
+
     async redirects() {
         return [
             {

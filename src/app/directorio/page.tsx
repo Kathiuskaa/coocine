@@ -306,6 +306,38 @@ const teamMembers: TeamMember[] = [
         instagram: "@marta_isabel_hincapie_uribe",
         email: "marta.hincapie@coocine.com"
     },
+    {
+        id: 16,
+        name: "Manuela Tabares",
+        role: "Docencia, gestión y realización comunitaria, investigación y escritura",
+        image: "/manuela-tabares.jpg",
+        bio: (
+            <>
+                Soy comunicadora social de la Universidad EAFIT con maestría en Educación Audiovisual de FLACSO. Mi experiencia se ha centrado en la formación audiovisual comunitaria, tanto desde el diseño de proyectos y metodologías, la facilitación de estos y la investigación, centrándome en las formas de hacer y pervivir de proyectos de formación audiovisual comunitarios y alternativos en Latinoamérica. Fui coordinadora académica de la Corporación Fecisla (2016-2022) de su festival de cine de Isla Fuerte y su proceso de Escuela, también coordinadora de formación de la Red de Creación Audiovisual 2020 y 2021. Pertenezco al colectivo latinoamericano HUECC -Hacer una escuela de cine comunitaria- Realizado en Argentina en 2018 y Perú en 2022 y 2024. He facilitado procesos de creación audiovisual en diversas regiones de Colombia así como Argentina, Uruguay y Perú. Como realizadora he escrito y dirigido cortometrajes entre ellos Estos Viejos -2022- y Carretera al Mar -en desarrollo-. También he trabajado en casting y producción de campo en Montevideo, Uruguay -2022-
+            </>
+        ),
+        filmography: [
+            { title: "ESTOS VIEJOS", details: ["Cortometraje", "Directora e investigadora"], year: "2022" }
+        ],
+        instagram: "@otravezmanu",
+        email: "manuelatab27@gmail.com"
+    },
+    {
+        id: 17,
+        name: "Karol Muñoz Arias",
+        role: "Rol Pendiente",
+        image: "/karol-munoz-arias.jpg",
+        bio: "Bio pendiente...",
+        email: "karol.munoz@coocine.com"
+    },
+    {
+        id: 18,
+        name: "Paola Cárdenas Arias",
+        role: "Rol Pendiente",
+        image: "/paola-cardenas-arias.jpg",
+        bio: "Bio pendiente...",
+        email: "paola.cardenas@coocine.com"
+    },
 ];
 
 export default function DirectoryPage() {

@@ -54,13 +54,12 @@ const Navbar = () => {
         >
             <Link href="/" className="block z-[110] absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0" onClick={() => setIsMenuOpen(false)}>
                 <Image
-                    src="/logo-white.png"
+                    src="/coocine-blanco.png"
                     alt="Coocine Logo"
                     width={200}
                     height={48}
                     className="w-[180px] h-auto object-contain"
                     priority
-                    unoptimized
                 />
             </Link>
 
