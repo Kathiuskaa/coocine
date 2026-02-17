@@ -27,29 +27,64 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
     {
-        id: 1,
-        name: "Germán Arango Rendón",
-        role: "Dirección, Guión, Investigación, Escritura creativa",
-        image: "/german-arango.jpg",
+        id: 12,
+        name: "Alejandra Morales García",
+        role: "Dirección, Producción creativa, Ilustración",
+        image: "/alejandra-morales.jpg",
 
-        imagePosition: "center 20%",
+        imagePosition: "center 15%",
         bio: (
             <>
-                Antropólogo, guionista y director de cine, master en antropología visual. Socio fundador de la empresa de cine Briosa Films. Co-fundador del colectivo de investigación y cine colaborativo Pasolini en Medellín. Su obra documental ha recibido más de 12 premios internacionales y ha participado en más de 40 festivales de cine en todo el mundo.
+                Directora y productora creativa. Hacedora de garabatos. Trabaja actualmente en LaFinka Studio, donde coordina flujos de trabajo y acompaña a artistas en la creación de narrativas animadas para clientes como Google, ABC Australia, PBS USA y otros. Ha participado en la producción y dirección artística de diversos festivales: fue coordinadora logística en el Festival de Cine de Jardín, responsable de comunicaciones en la Muestra de Video Experimental VARTEX, y curadora y directora creativa en el Festival de Cortometrajes Rodando en Bicicleta. Ganadora del Fondo para el Desarrollo Cinematográfico (FDC) 2019 y del programa Jóvenes en Movimiento 2021. Tiene experiencia en la formulación, dirección y producción de proyectos audiovisuales. Le interesa mezclar las artes plásticas y el cine como lenguajes que dialogan y se potencian mutuamente.
             </>
         ),
         filmography: [
-            { title: "RÍO PROFUNDO", details: ["Cortometraje experimental", "Guión y Dirección"], year: "2024" },
-            { title: "INSTRUCCIONES PARA CUANDO NO ESTÉ", details: ["Largometraje documental", "Guión y Dirección"], year: "2024" },
-            { title: "TEJER ENTRE FRONTERAS", details: ["Serie documental", "Dirección y Montaje"], year: "2024" },
-            { title: "CANTOS QUE INUNDAN EL RÍO", details: ["Largometraje documental", "Guión y Dirección"], year: "2021" },
-            { title: "A MITAD DEL CAMINO", details: ["Cortometraje musical", "Dirección artística"], year: "2018" },
-            { title: "LAS MUSAS DE POGUE", details: ["Cortometraje documental", "Guión y Dirección"], year: "2018" },
-            { title: "TESTIGOS A OJO Y VOZ", details: ["Videoclip", "Producción"], year: "2017" },
-            { title: "LA MEMORIA DE LOS PECES", details: ["Cortometraje documental", "Guión y Dirección"], year: "2017" }
+            { title: "ENTRELAZADAS", details: ["Cortometraje", "Dirección, Guión y Animación"], year: "2023" },
+            { title: "MIENTRAS TANTO", details: ["Cortometraje", "Dirección y Guión"], year: "2018" },
+            { title: "EN LAS PARTIDAS", details: ["Cortometraje", "Dirección y Guión"], year: "2013" }
         ],
-        instagram: "@luckasperro",
-        email: "german.arango@coocine.com"
+        instagram: "@limaleja",
+        imdb: "https://www.cinespecimen.com/cineastas/alejandra-morales",
+        email: "alejandra.morales@coocine.com"
+    },
+    {
+        id: 15,
+        name: "Alexander Arbeláez Osorio",
+        role: "Producción, Programación, Docencia",
+        image: "/alexander-arbealez.jpg",
+
+        bio: "Comunicador Audiovisual de la Universidad de Antioquia, especializado en producción ejecutiva. Desde Monociclo Cine produjo largometrajes y cortometrajes estrenados en salas de cine comerciales y premiados en festivales internacionales. También es docente universitario, jurado de convocatorias, tutor de proyectos y programador en la Cooperativa Coocine.",
+        filmography: [
+            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje", "Producción"], year: "2024" },
+            { title: "RODAJE", details: ["Mediometraje", "Producción"], year: "2023" },
+            { title: "LA ROYA", details: ["Largometraje", "Producción"], year: "2022" },
+            { title: "SI DIOS FUERA MUJER", details: ["Largometraje", "Producción"], year: "2021" },
+            { title: "TIERRA MOJADA", details: ["Cortometraje", "Producción"], year: "2017" },
+            { title: "LOS NADIE", details: ["Largometraje", "Producción"], year: "2016" },
+            { title: "KALASHNIKOV", details: ["Cortometraje", "Producción"], year: "2012" }
+        ],
+        instagram: "@jalexao",
+        imdb: "https://www.imdb.com/es-es/name/nm5605054/",
+        email: "alexander.arbelaez@coocine.com"
+    },
+    {
+        id: 8,
+        name: "Camila Caballero",
+        role: "Rol Pendiente",
+        image: "/camila-caballero.jpg",
+
+        bio: "Bio pendiente...",
+        email: "camila.caballero@coocine.com"
+    },
+    {
+        id: 5,
+        name: "Daniel Mesa de los Ríos",
+        role: "Cineclubismo, Crítica de cine, Formación",
+        image: "/daniel-mesa.jpg",
+        imagePosition: "center 20%",
+
+        bio: "Coordinador de la Competencia de cortometrajes Nuevas Voces de Cinemancia Festival metropolitano de cine. Cineclubista en el Rambiñen, cineasta, espectador fervoroso de cine. Apasionado por la gestión de públicos y el descubrimiento de nuevas miradas y sensibilidades.",
+        email: "daniel.mesa@coocine.com"
     },
     {
         id: 2,
@@ -79,46 +114,29 @@ const teamMembers: TeamMember[] = [
         email: "davidcofranco@gmail.com"
     },
     {
-        id: 3,
-        name: "Juan Cañola",
-        role: "Montaje",
-        image: "/juan-canola.jpg",
+        id: 1,
+        name: "Germán Arango Rendón",
+        role: "Dirección, Guión, Investigación, Escritura creativa",
+        image: "/german-arango.jpg",
 
+        imagePosition: "center 20%",
         bio: (
             <>
-                Montajista con experiencia en películas seleccionadas en festivales de renombre como Berlinale, IDFA y Málaga. Ha trabajado en obras galardonadas como Mejor Cortometraje en Punto de Vista y Mejor Película Iberoamericana en Zonazine. En 2018 recibió el Premio India Catalina a Mejor Editor.
+                Antropólogo, guionista y director de cine, master en antropología visual. Socio fundador de la empresa de cine Briosa Films. Co-fundador del colectivo de investigación y cine colaborativo Pasolini en Medellín. Su obra documental ha recibido más de 12 premios internacionales y ha participado en más de 40 festivales de cine en todo el mundo.
             </>
         ),
         filmography: [
-            { title: "AVALANCHA", details: ["Cortometraje documental"], year: "2023" },
-            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje ficción"], year: "2024" },
-            { title: "DIÓGENES", details: ["Largometraje ficción"], year: "2023" },
-            { title: "AMANDO A MARTHA", details: ["Largometraje documental"], year: "2022" },
-            { title: "LA ROYA", details: ["Largometraje ficción"], year: "2021" },
-            { title: "LAS FAUCES", details: ["Cortometraje ficción"], year: "2020" }
+            { title: "RÍO PROFUNDO", details: ["Cortometraje experimental", "Guión y Dirección"], year: "2024" },
+            { title: "INSTRUCCIONES PARA CUANDO NO ESTÉ", details: ["Largometraje documental", "Guión y Dirección"], year: "2024" },
+            { title: "TEJER ENTRE FRONTERAS", details: ["Serie documental", "Dirección y Montaje"], year: "2024" },
+            { title: "CANTOS QUE INUNDAN EL RÍO", details: ["Largometraje documental", "Guión y Dirección"], year: "2021" },
+            { title: "A MITAD DEL CAMINO", details: ["Cortometraje musical", "Dirección artística"], year: "2018" },
+            { title: "LAS MUSAS DE POGUE", details: ["Cortometraje documental", "Guión y Dirección"], year: "2018" },
+            { title: "TESTIGOS A OJO Y VOZ", details: ["Videoclip", "Producción"], year: "2017" },
+            { title: "LA MEMORIA DE LOS PECES", details: ["Cortometraje documental", "Guión y Dirección"], year: "2017" }
         ],
-        imdb: "https://www.imdb.com/es/name/nm8110301/?ref_=ext_shr_lnk",
-        email: "juan.canola@coocine.com"
-    },
-    {
-        id: 15,
-        name: "Alexander Arbeláez Osorio",
-        role: "Producción, Programación, Docencia",
-        image: "/alexander-arbealez.jpg",
-
-        bio: "Comunicador Audiovisual de la Universidad de Antioquia, especializado en producción ejecutiva. Desde Monociclo Cine produjo largometrajes y cortometrajes estrenados en salas de cine comerciales y premiados en festivales internacionales. También es docente universitario, jurado de convocatorias, tutor de proyectos y programador en la Cooperativa Coocine.",
-        filmography: [
-            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje", "Producción"], year: "2024" },
-            { title: "RODAJE", details: ["Mediometraje", "Producción"], year: "2023" },
-            { title: "LA ROYA", details: ["Largometraje", "Producción"], year: "2022" },
-            { title: "SI DIOS FUERA MUJER", details: ["Largometraje", "Producción"], year: "2021" },
-            { title: "TIERRA MOJADA", details: ["Cortometraje", "Producción"], year: "2017" },
-            { title: "LOS NADIE", details: ["Largometraje", "Producción"], year: "2016" },
-            { title: "KALASHNIKOV", details: ["Cortometraje", "Producción"], year: "2012" }
-        ],
-        instagram: "@jalexao",
-        imdb: "https://www.imdb.com/es-es/name/nm5605054/",
-        email: "alexander.arbelaez@coocine.com"
+        instagram: "@luckasperro",
+        email: "german.arango@coocine.com"
     },
     {
         id: 4,
@@ -141,14 +159,26 @@ const teamMembers: TeamMember[] = [
         email: "jose.duque@coocine.com"
     },
     {
-        id: 5,
-        name: "Daniel Mesa de los Ríos",
-        role: "Cineclubismo, Crítica de cine, Formación",
-        image: "/daniel-mesa.jpg",
-        imagePosition: "center 20%",
+        id: 3,
+        name: "Juan Cañola",
+        role: "Montaje",
+        image: "/juan-canola.jpg",
 
-        bio: "Coordinador de la Competencia de cortometrajes Nuevas Voces de Cinemancia Festival metropolitano de cine. Cineclubista en el Rambiñen, cineasta, espectador fervoroso de cine. Apasionado por la gestión de públicos y el descubrimiento de nuevas miradas y sensibilidades.",
-        email: "daniel.mesa@coocine.com"
+        bio: (
+            <>
+                Montajista con experiencia en películas seleccionadas en festivales de renombre como Berlinale, IDFA y Málaga. Ha trabajado en obras galardonadas como Mejor Cortometraje en Punto de Vista y Mejor Película Iberoamericana en Zonazine. En 2018 recibió el Premio India Catalina a Mejor Editor.
+            </>
+        ),
+        filmography: [
+            { title: "AVALANCHA", details: ["Cortometraje documental"], year: "2023" },
+            { title: "LA PIEL EN PRIMAVERA", details: ["Largometraje ficción"], year: "2024" },
+            { title: "DIÓGENES", details: ["Largometraje ficción"], year: "2023" },
+            { title: "AMANDO A MARTHA", details: ["Largometraje documental"], year: "2022" },
+            { title: "LA ROYA", details: ["Largometraje ficción"], year: "2021" },
+            { title: "LAS FAUCES", details: ["Cortometraje ficción"], year: "2020" }
+        ],
+        imdb: "https://www.imdb.com/es/name/nm8110301/?ref_=ext_shr_lnk",
+        email: "juan.canola@coocine.com"
     },
     {
         id: 6,
@@ -181,6 +211,53 @@ const teamMembers: TeamMember[] = [
         email: "juan.patino@coocine.com"
     },
     {
+        id: 17,
+        name: "Karol Muñoz Arias",
+        role: "Rol Pendiente",
+        image: "/karol-munoz-arias.jpg",
+        bio: "Bio pendiente...",
+        email: "karol.munoz@coocine.com"
+    },
+    {
+        id: 13,
+        name: "Manuela Saldarriaga H.",
+        role: "Guión, Crítica cinematográfica",
+        image: "/manuela-saldarriaga-v2.jpg",
+        bio: (
+            <>
+                Comunicadora social y magíster en periodismo de la Universidad de los Andes, donde fue docente, así como escritora y editora creativa para Cerosetenta. Ha publicado en medios nacionales e internacionales, revistas académicas y ediciones descentralizadas. Fue becaria del AMAZON RJF del Pulitzer Center y trabajó como editora y documentalista en Consonante, proyecto de la Fundación para la Libertad de Prensa (FLIP). Su trabajo ha sido principalmente con campesinos e indígenas colombianos.
+            </>
+        ),
+        filmography: [
+            { title: "EGIDIO CUADRADO", details: ["Documental", "Dirección y Guión"], year: "2025" },
+            { title: "AGENDA CIUDADANA SAN VICENTE DEL CAGUÁN", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA EL CARMEN DE ATRATO (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA TADÓ (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA SAN JUAN DEL CÉSAR (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "AGENDA CIUDADANA FONSECA (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
+            { title: "SUICIDIO INDÍGENA, UNA HERIDA ABIERTA EN LA SELVA", details: ["Mediometraje documental", "Guión y Montaje"], year: "2021" },
+            { title: "LA ENGUANDOCADA", details: ["Ensayo visual", "Investigación y Guión"], year: "2019" }
+        ],
+        instagram: "@lanochemochila",
+        email: "manuela.saldarriaga@coocine.com"
+    },
+    {
+        id: 16,
+        name: "Manuela Tabares",
+        role: "Docencia, gestión y realización comunitaria, investigación y escritura",
+        image: "/manuela-tabares.jpg",
+        bio: (
+            <>
+                Soy comunicadora social de la Universidad EAFIT con maestría en Educación Audiovisual de FLACSO. Mi experiencia se ha centrado en la formación audiovisual comunitaria, tanto desde el diseño de proyectos y metodologías, la facilitación de estos y la investigación, centrándome en las formas de hacer y pervivir de proyectos de formación audiovisual comunitarios y alternativos en Latinoamérica. Fui coordinadora académica de la Corporación Fecisla (2016-2022) de su festival de cine de Isla Fuerte y su proceso de Escuela, también coordinadora de formación de la Red de Creación Audiovisual 2020 y 2021. Pertenezco al colectivo latinoamericano HUECC -Hacer una escuela de cine comunitaria- Realizado en Argentina en 2018 y Perú en 2022 y 2024. He facilitado procesos de creación audiovisual en diversas regiones de Colombia así como Argentina, Uruguay y Perú. Como realizadora he escrito y dirigido cortometrajes entre ellos Estos Viejos -2022- y Carretera al Mar -en desarrollo-. También he trabajado en casting y producción de campo en Montevideo, Uruguay -2022-
+            </>
+        ),
+        filmography: [
+            { title: "ESTOS VIEJOS", details: ["Cortometraje", "Directora e investigadora"], year: "2022" }
+        ],
+        instagram: "@otravezmanu",
+        email: "manuelatab27@gmail.com"
+    },
+    {
         id: 7,
         name: "María Paula",
         role: "Rol Pendiente",
@@ -191,13 +268,35 @@ const teamMembers: TeamMember[] = [
         email: "maria.paula@coocine.com"
     },
     {
-        id: 8,
-        name: "Camila Caballero",
+        id: 14,
+        name: "Marta Isabel Hincapié Uribe",
+        role: "Dirección, Realización documental, Docencia",
+        image: "/marta-hincapie.jpg",
+        bio: (
+            <>
+                Documentalista independiente con experiencia en docencia de cine documental en diferentes escuelas y universidades de Colombia y Cataluña. Sus documentales han participado en numerosos festivales nacionales e internacionales. Actualmente es docente de documental en la Facultad de Comunicación Audiovisual de la Universidad de Antioquia.
+            </>
+        ),
+        filmography: [
+            { title: "LAS RAZONES DEL LOBO", details: ["Largometraje", "Dirección"], year: "2020" },
+            { title: "BAJO UNA LLUVIA AJENA", details: ["Largometraje", "Dirección"], year: "2024" },
+            { title: "DAYIPAPARA LA MADRE", details: ["Mediometraje", "Dirección"], year: "2013" },
+            { title: "EN RELIEVE", details: ["Mediometraje", "Dirección"], year: "2015" },
+            { title: "A SOLAS", details: ["Mediometraje", "Dirección"], year: "2014" },
+            { title: "LOS DEMONIOS SUELTOS", details: ["Mediometraje", "Dirección"], year: "2011" },
+            { title: "LA PENA SECRETA", details: ["Mediometraje", "Dirección"], year: "2013" },
+            { title: "PIEL", details: ["Mediometraje", "Dirección"], year: "2006" }
+        ],
+        instagram: "@marta_isabel_hincapie_uribe",
+        email: "marta.hincapie@coocine.com"
+    },
+    {
+        id: 18,
+        name: "Paola Cárdenas Arias",
         role: "Rol Pendiente",
-        image: "/camila-caballero.jpg",
-
+        image: "/paola-cardenas-arias.jpg",
         bio: "Bio pendiente...",
-        email: "camila.caballero@coocine.com"
+        email: "paola.cardenas@coocine.com"
     },
     {
         id: 9,
@@ -238,105 +337,6 @@ const teamMembers: TeamMember[] = [
         instagram: "@yiraplaza",
         imdb: "https://www.imdb.com/es/name/nm7295030/",
         email: "yira.plaza@coocine.com"
-    },
-    {
-        id: 12,
-        name: "Alejandra Morales García",
-        role: "Dirección, Producción creativa, Ilustración",
-        image: "/alejandra-morales.jpg",
-
-        imagePosition: "center 15%",
-        bio: (
-            <>
-                Directora y productora creativa. Hacedora de garabatos. Trabaja actualmente en LaFinka Studio, donde coordina flujos de trabajo y acompaña a artistas en la creación de narrativas animadas para clientes como Google, ABC Australia, PBS USA y otros. Ha participado en la producción y dirección artística de diversos festivales: fue coordinadora logística en el Festival de Cine de Jardín, responsable de comunicaciones en la Muestra de Video Experimental VARTEX, y curadora y directora creativa en el Festival de Cortometrajes Rodando en Bicicleta. Ganadora del Fondo para el Desarrollo Cinematográfico (FDC) 2019 y del programa Jóvenes en Movimiento 2021. Tiene experiencia en la formulación, dirección y producción de proyectos audiovisuales. Le interesa mezclar las artes plásticas y el cine como lenguajes que dialogan y se potencian mutuamente.
-            </>
-        ),
-        filmography: [
-            { title: "ENTRELAZADAS", details: ["Cortometraje", "Dirección, Guión y Animación"], year: "2023" },
-            { title: "MIENTRAS TANTO", details: ["Cortometraje", "Dirección y Guión"], year: "2018" },
-            { title: "EN LAS PARTIDAS", details: ["Cortometraje", "Dirección y Guión"], year: "2013" }
-        ],
-        instagram: "@limaleja",
-        imdb: "https://www.cinespecimen.com/cineastas/alejandra-morales",
-        email: "alejandra.morales@coocine.com"
-    },
-    {
-        id: 13,
-        name: "Manuela Saldarriaga H.",
-        role: "Guión, Crítica cinematográfica",
-        image: "/manuela-saldarriaga-v2.jpg",
-        bio: (
-            <>
-                Comunicadora social y magíster en periodismo de la Universidad de los Andes, donde fue docente, así como escritora y editora creativa para Cerosetenta. Ha publicado en medios nacionales e internacionales, revistas académicas y ediciones descentralizadas. Fue becaria del AMAZON RJF del Pulitzer Center y trabajó como editora y documentalista en Consonante, proyecto de la Fundación para la Libertad de Prensa (FLIP). Su trabajo ha sido principalmente con campesinos e indígenas colombianos.
-            </>
-        ),
-        filmography: [
-            { title: "EGIDIO CUADRADO", details: ["Documental", "Dirección y Guión"], year: "2025" },
-            { title: "AGENDA CIUDADANA SAN VICENTE DEL CAGUÁN", details: ["Documental", "Dirección y Guión"], year: "2024" },
-            { title: "AGENDA CIUDADANA EL CARMEN DE ATRATO (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
-            { title: "AGENDA CIUDADANA TADÓ (CHOCÓ)", details: ["Documental", "Dirección y Guión"], year: "2024" },
-            { title: "AGENDA CIUDADANA SAN JUAN DEL CÉSAR (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
-            { title: "AGENDA CIUDADANA FONSECA (LA GUAJIRA)", details: ["Documental", "Dirección y Guión"], year: "2024" },
-            { title: "SUICIDIO INDÍGENA, UNA HERIDA ABIERTA EN LA SELVA", details: ["Mediometraje documental", "Guión y Montaje"], year: "2021" },
-            { title: "LA ENGUANDOCADA", details: ["Ensayo visual", "Investigación y Guión"], year: "2019" }
-        ],
-        instagram: "@lanochemochila",
-        email: "manuela.saldarriaga@coocine.com"
-    },
-    {
-        id: 14,
-        name: "Marta Isabel Hincapié Uribe",
-        role: "Dirección, Realización documental, Docencia",
-        image: "/marta-hincapie.jpg",
-        bio: (
-            <>
-                Documentalista independiente con experiencia en docencia de cine documental en diferentes escuelas y universidades de Colombia y Cataluña. Sus documentales han participado en numerosos festivales nacionales e internacionales. Actualmente es docente de documental en la Facultad de Comunicación Audiovisual de la Universidad de Antioquia.
-            </>
-        ),
-        filmography: [
-            { title: "LAS RAZONES DEL LOBO", details: ["Largometraje", "Dirección"], year: "2020" },
-            { title: "BAJO UNA LLUVIA AJENA", details: ["Largometraje", "Dirección"], year: "2024" },
-            { title: "DAYIPAPARA LA MADRE", details: ["Mediometraje", "Dirección"], year: "2013" },
-            { title: "EN RELIEVE", details: ["Mediometraje", "Dirección"], year: "2015" },
-            { title: "A SOLAS", details: ["Mediometraje", "Dirección"], year: "2014" },
-            { title: "LOS DEMONIOS SUELTOS", details: ["Mediometraje", "Dirección"], year: "2011" },
-            { title: "LA PENA SECRETA", details: ["Mediometraje", "Dirección"], year: "2013" },
-            { title: "PIEL", details: ["Mediometraje", "Dirección"], year: "2006" }
-        ],
-        instagram: "@marta_isabel_hincapie_uribe",
-        email: "marta.hincapie@coocine.com"
-    },
-    {
-        id: 16,
-        name: "Manuela Tabares",
-        role: "Docencia, gestión y realización comunitaria, investigación y escritura",
-        image: "/manuela-tabares.jpg",
-        bio: (
-            <>
-                Soy comunicadora social de la Universidad EAFIT con maestría en Educación Audiovisual de FLACSO. Mi experiencia se ha centrado en la formación audiovisual comunitaria, tanto desde el diseño de proyectos y metodologías, la facilitación de estos y la investigación, centrándome en las formas de hacer y pervivir de proyectos de formación audiovisual comunitarios y alternativos en Latinoamérica. Fui coordinadora académica de la Corporación Fecisla (2016-2022) de su festival de cine de Isla Fuerte y su proceso de Escuela, también coordinadora de formación de la Red de Creación Audiovisual 2020 y 2021. Pertenezco al colectivo latinoamericano HUECC -Hacer una escuela de cine comunitaria- Realizado en Argentina en 2018 y Perú en 2022 y 2024. He facilitado procesos de creación audiovisual en diversas regiones de Colombia así como Argentina, Uruguay y Perú. Como realizadora he escrito y dirigido cortometrajes entre ellos Estos Viejos -2022- y Carretera al Mar -en desarrollo-. También he trabajado en casting y producción de campo en Montevideo, Uruguay -2022-
-            </>
-        ),
-        filmography: [
-            { title: "ESTOS VIEJOS", details: ["Cortometraje", "Directora e investigadora"], year: "2022" }
-        ],
-        instagram: "@otravezmanu",
-        email: "manuelatab27@gmail.com"
-    },
-    {
-        id: 17,
-        name: "Karol Muñoz Arias",
-        role: "Rol Pendiente",
-        image: "/karol-munoz-arias.jpg",
-        bio: "Bio pendiente...",
-        email: "karol.munoz@coocine.com"
-    },
-    {
-        id: 18,
-        name: "Paola Cárdenas Arias",
-        role: "Rol Pendiente",
-        image: "/paola-cardenas-arias.jpg",
-        bio: "Bio pendiente...",
-        email: "paola.cardenas@coocine.com"
     },
 ];
 
